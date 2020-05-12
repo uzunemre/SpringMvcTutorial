@@ -6,6 +6,7 @@ import com.emreuzun.springmvc.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Comparator;
 import java.util.List;
 
 @Service
@@ -40,7 +41,8 @@ public class UserServiceMockImpl implements UserService {
 
     @Override
     public void create(User user) {
-        // todo business logic
+        long maxId = userRepository.findAll().stream().max(Comparator.comparing(User::getId)).get().getId();
+        user.setId(maxId + 1);
         userRepository.create(user);
     }
 
