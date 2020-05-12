@@ -4,8 +4,9 @@
 <html>
 <body>
 <ul>
-    <li><a href="/users/list">1-List User</a></li>
-    <li><a href="/users/add">2-Add User</a></li>
+    <li><a href="/jstl/tags">1-Jstl</a></li>
+    <li><a href="/users/list">2-List User</a></li>
+    <li><a href="/users/add">3-Add User</a></li>
 </ul>
 </body>
 </html>
