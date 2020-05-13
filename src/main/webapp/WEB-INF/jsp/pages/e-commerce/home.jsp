@@ -28,17 +28,7 @@
 
 <body>
 
-<!--
-        PRELOADER
-        =============================================== -->
-<div class="preloader">
-    <img src="../../../../../resources/images/preloader.gif" alt="">
-</div>
-<!-- END: PRELOADER -->
 
-<!--
-        NAVBAR
-        =============================================== -->
 <nav class="navbar navbar-default">
 
     <div class="container">
@@ -73,7 +63,7 @@
                     <a href="#" class="cart-icon hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">
 
-                        <span class="badge bg-blue">3</span>
+                        <span class="badge bg-blue">0</span>
 
                         <i class="icofont icofont-cart-alt"></i>
                     </a>
@@ -86,117 +76,7 @@
 
                     <!-- Dropdown items list -->
                     <ul class="dropdown-menu">
-
-                        <!-- Item -->
-                        <li>
-                            <div class="wrap">
-
-                                <!-- Image -->
-                                <div class="image">
-                                    <img src="../../../../../resources/images/shop/img-01.jpg" alt="">
-                                </div>
-
-                                <!-- Caption -->
-                                <div class="caption">
-                                            <span class="comp-header st-1 text-uppercase">
-                                                T-SHIPT
-                                                <span>
-                                                    MEN COLLECTION
-                                                </span>
-                                                <span>
-                                                    FAKE BRAND
-                                                </span>
-                                            </span>
-
-                                    <span class="price">
-                                                <span class="text-grey-dark">$</span>
-                                                257 <small class="text-grey-dark">.00</small>
-                                            </span>
-                                </div>
-
-                                <!-- Remove btn -->
-                                <span class="remove-btn bg-blue">
-                                            <i class="icofont icofont-bucket"></i>
-                                        </span>
-                            </div>
-                        </li>
-
-                        <!-- Item -->
-                        <li>
-                            <div class="wrap">
-
-                                <!-- Image -->
-                                <div class="image">
-                                    <img src="../../../../../resources/images/shop/img-01.jpg" alt="">
-                                </div>
-
-                                <!-- Caption -->
-                                <div class="caption">
-                                            <span class="comp-header st-1 text-uppercase">
-                                                T-SHIPT
-                                                <span>
-                                                    MEN COLLECTION
-                                                </span>
-                                                <span>
-                                                    FAKE BRAND
-                                                </span>
-                                            </span>
-
-                                    <span class="price">
-                                                <span class="text-grey-dark">$</span>
-                                                257 <small class="text-grey-dark">.00</small>
-                                            </span>
-                                </div>
-
-                                <!-- Remove btn -->
-                                <span class="remove-btn bg-blue">
-                                            <i class="icofont icofont-bucket"></i>
-                                        </span>
-                            </div>
-                        </li>
-
-                        <!-- Item -->
-                        <li>
-                            <div class="wrap">
-
-                                <!-- Image -->
-                                <div class="image">
-                                    <img src="../../../../../resources/images/shop/img-01.jpg" alt="">
-                                </div>
-
-                                <!-- Caption -->
-                                <div class="caption">
-                                            <span class="comp-header st-1 text-uppercase">
-                                                T-SHIPT
-                                                <span>
-                                                    MEN COLLECTION
-                                                </span>
-                                                <span>
-                                                    FAKE BRAND
-                                                </span>
-                                            </span>
-
-                                    <span class="price">
-                                                <span class="text-grey-dark">$</span>
-                                                257 <small class="text-grey-dark">.00</small>
-                                            </span>
-                                </div>
-
-                                <!-- Remove btn -->
-                                <span class="remove-btn bg-blue">
-                                            <i class="icofont icofont-bucket"></i>
-                                        </span>
-                            </div>
-                        </li>
-
-
-                        <li class="more-btn sdw">
-                            <a href="card-page-step-1.html" class="btn-material btn-primary">
-                                View order <i class="icofont icofont-check-circled"></i>
-                            </a>
-                        </li>
-
-
+                        <!--todo sepete eklenenler gözüksün -->
                     </ul>
                 </li>
             </ul>
@@ -237,7 +117,7 @@
 
                                     <span class="price hidden-xs">
                                            <span class="wrap text-red">
-                                               ${product.priceIntegerText}<small> ${product.priceDecimalText}</small>-
+                                             $${product.priceIntegerText}<small> ${product.priceDecimalText}</small>-
                                            </span>
                                        </span>
                                     <span class="text-center visible-xs">
@@ -316,21 +196,15 @@
                                             Hot!
                                         </span>
                                     </c:if>
-
-
                                 </div>
-
                                 <!-- Image -->
                                 <div class="image">
-                                    <img class="hover" src="images/shop/img-01-1.jpg" alt="">
-                                    <img class="main" src="images/shop/img-01.jpg" alt="">
+                                    <img class="main" src="${product.imagePath}" alt="">
                                 </div>
-
                                 <!-- Caption -->
                                 <div class="caption">
                                     <!-- Rate -->
                                     <div class="rate">
-
                                         <ul class="stars">
                                             <li class="active">
                                                 <i class="icofont icofont-star"></i>
@@ -348,11 +222,6 @@
                                                 <i class="icofont icofont-star"></i>
                                             </li>
                                         </ul>
-
-                                        <div class="rate-info">
-                                            24 members
-                                            <span>like it</span>
-                                        </div>
                                     </div>
 
                                     <!-- Timer -->
@@ -364,55 +233,24 @@
                                         <span class="tdtimer-s"></span>s
                                     </div>
 
-                                    <!-- Features list -->
-                                    <ul class="features">
-                                        <li>
-                                            <i class="icofont icofont-shield"></i>
-                                            <span>24 days. Money Back Guarantee</span>
-                                        </li>
-                                        <li>
-                                            <i class="icofont icofont-ship"></i>
-                                            <span>Free shipping</span>
-                                        </li>
-                                        <li>
-                                            <i class="icofont icofont-hand"></i>
-                                            <span>Free help and setup</span>
-                                        </li>
-                                    </ul>
 
-                                    <!-- Text -->
-                                    <p class="text">
-                                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec
-                                        sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit
-                                        amet
-                                        mauris.
-                                    </p>
                                 </div>
                             </div>
                             <div class="info">
-
-                                <!-- Buy btn -->
                                 <a href="shop-item.html" class="btn-material btn-price">
-
-                                    <!-- Price -->
                                     <span class="price">
-
-                                            <!-- Currency -->
                                             <span class="curr">
                                                 $
                                             </span>
-
-                                        <!-- Sale price -->
-                                            <span class="sale">
-                                                <span>234<small>.00</small></span>
+                                            <c:if test="${product.campaign}">
+                                                   <span class="sale">
+                                                <span> ${product.oldPriceIntegerText}<small>${product.oldPriceDecimalText}</small></span>
                                             </span>
-
-                                        <!-- Price -->
+                                            </c:if>
                                             <span class="price">
-                                                175<small>.50</small>
+                                                ${product.priceIntegerText}<small>${product.priceDecimalText}</small>
                                             </span>
                                         </span>
-
                                     <!-- Quantity -->
                                     <span class="qnt-select">
                                             <span class="plus">

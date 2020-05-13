@@ -89,11 +89,21 @@ public class Product {
     }
 
     public String getPriceIntegerText() {
-        return "$" + price.intValue();
+        return "" + price.intValue();
     }
 
     public String getPriceDecimalText() {
         BigDecimal val = price.setScale(2);
+        int length = val.toString().length();
+        return "." + val.toString().substring(length - 2, length);
+    }
+
+    public String getOldPriceIntegerText() {
+        return "" + oldPrice.intValue();
+    }
+
+    public String getOldPriceDecimalText() {
+        BigDecimal val = oldPrice.setScale(2);
         int length = val.toString().length();
         return "." + val.toString().substring(length - 2, length);
     }
@@ -110,6 +120,16 @@ public class Product {
             return false;
         }
         return infoEnum.equals(InfoEnum.NEW);
+    }
+
+    public boolean isCampaign() {
+        if (oldPrice == null) {
+            return false;
+        }
+        if (oldPrice.equals(price)) {
+            return false;
+        }
+        return true;
     }
 
 }

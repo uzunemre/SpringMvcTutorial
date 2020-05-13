@@ -47,6 +47,7 @@ public class ProductRepositoryMockImpl implements ProductRepository {
         product4.setAverageStar(4.0);
         product4.setPrice(new BigDecimal(175.50));
         product4.setOldPrice(new BigDecimal(234.00));
+        product4.setImagePath("../../../../../resources/images/shop/img-01.jpg");
         productsMap.put(product4.getId(), product4);
 
         Product product5 = new Product();
@@ -54,7 +55,7 @@ public class ProductRepositoryMockImpl implements ProductRepository {
         product5.setName("Jacket");
         product5.setAverageStar(3.0);
         product5.setPrice(new BigDecimal(234.00));
-        product5.setOldPrice(new BigDecimal(234.00));
+        product5.setImagePath("../../../../../resources/images/shop/img-02.jpg");
         productsMap.put(product5.getId(), product5);
 
         Product product6 = new Product();
@@ -64,7 +65,7 @@ public class ProductRepositoryMockImpl implements ProductRepository {
         product6.setInfoEnum(InfoEnum.HOT);
         product6.setAverageStar(5.0);
         product6.setPrice(new BigDecimal(1345.50));
-        product6.setOldPrice(new BigDecimal(1345.50));
+        product6.setImagePath("../../../../../resources/images/shop/img-03.jpg");
         productsMap.put(product6.getId(), product6);
 
         Product product7 = new Product();
@@ -72,7 +73,7 @@ public class ProductRepositoryMockImpl implements ProductRepository {
         product7.setName("Woman T-Shirt");
         product7.setAverageStar(0);
         product7.setPrice(new BigDecimal(175.50));
-        product7.setOldPrice(new BigDecimal(175.50));
+        product7.setImagePath("../../../../../resources/images/shop/img-04.jpg");
         productsMap.put(product7.getId(), product7);
 
     }
