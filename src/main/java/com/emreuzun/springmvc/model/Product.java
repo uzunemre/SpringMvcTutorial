@@ -18,11 +18,11 @@ public class Product {
 
     private InfoEnum infoEnum;
 
-    private BigDecimal oldPrice = BigDecimal.ZERO;
+    private BigDecimal oldPrice = null;
 
     private BigDecimal price = BigDecimal.ZERO;
 
-    private double averageStar;
+    private int averageStar;
 
     public Long getId() {
         return id;
@@ -80,11 +80,11 @@ public class Product {
         this.price = price;
     }
 
-    public double getAverageStar() {
+    public int getAverageStar() {
         return averageStar;
     }
 
-    public void setAverageStar(double averageStar) {
+    public void setAverageStar(int averageStar) {
         this.averageStar = averageStar;
     }
 

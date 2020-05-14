@@ -177,7 +177,7 @@
                                         ${product.name}
                                     <div class="rate">
                                         <ul class="stars">
-                                            <c:forEach var="i" begin="1" end="5">
+                                            <c:forEach var="i" begin="1" end="${product.averageStar}">
                                                 <li class="active">
                                                     <i class="icofont icofont-star"></i>
                                                 </li>
@@ -206,38 +206,17 @@
                                     <!-- Rate -->
                                     <div class="rate">
                                         <ul class="stars">
-                                            <li class="active">
-                                                <i class="icofont icofont-star"></i>
-                                            </li>
-                                            <li class="active">
-                                                <i class="icofont icofont-star"></i>
-                                            </li>
-                                            <li class="active">
-                                                <i class="icofont icofont-star"></i>
-                                            </li>
-                                            <li class="active">
-                                                <i class="icofont icofont-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="icofont icofont-star"></i>
-                                            </li>
+                                            <c:forEach var="i" begin="1" end="${product.averageStar}">
+                                                <li class="active">
+                                                    <i class="icofont icofont-star"></i>
+                                                </li>
+                                            </c:forEach>
                                         </ul>
                                     </div>
-
-                                    <!-- Timer -->
-                                    <div class="timer-body">
-                                        <span class="sale text-red">Sale</span>
-                                        <span class="tdtimer-d"></span>d
-                                        <span class="tdtimer-h"></span>h
-                                        <span class="tdtimer-m"></span>m
-                                        <span class="tdtimer-s"></span>s
-                                    </div>
-
-
                                 </div>
                             </div>
                             <div class="info">
-                                <a href="shop-item.html" class="btn-material btn-price">
+                                <a class="btn-material btn-price">
                                     <span class="price">
                                             <span class="curr">
                                                 $
@@ -269,15 +248,11 @@
                                             <i class="icofont icofont-cart-alt"></i>
                                         </span>
                                 </a>
-
-                                <!-- Favorite added -->
-                                <a href="#" class="favorite-link active">
+                                <a class="favorite-link active">
                                     <i class="icofont icofont-star"></i>
                                     to favorite
                                 </a>
-
-                                <!-- More link -->
-                                <a href="#" class="more-link">More info</a>
+                                <a class="more-link">More info</a>
                             </div>
                         </div>
                     </div>
