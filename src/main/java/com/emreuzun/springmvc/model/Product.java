@@ -1,10 +1,7 @@
 package com.emreuzun.springmvc.model;
 
 import com.emreuzun.springmvc.enumaration.InfoEnum;
-import com.emreuzun.springmvc.enumaration.SizeEnum;
-
 import java.math.BigDecimal;
-import java.util.Map;
 
 public class Product {
 

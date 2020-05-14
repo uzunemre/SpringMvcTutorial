@@ -89,4 +89,9 @@ public class ProductRepositoryMockImpl implements ProductRepository {
         List<Product> productList = productsMap.values().stream().sorted(Comparator.comparing(Product::getId)).collect(Collectors.toList());
         return productList.subList(0, 3);
     }
+
+    @Override
+    public Product findProduct(long id) {
+        return productsMap.get(id);
+    }
 }

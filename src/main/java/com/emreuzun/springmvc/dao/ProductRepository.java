@@ -7,4 +7,5 @@ import java.util.List;
 public interface ProductRepository {
     List<Product> findFeatures();
     List<Product> findBanners();
+    Product findProduct(long id);
 }

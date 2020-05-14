@@ -59,24 +59,22 @@
                             </span>
                 </li>
                 <li class="cart">
-
-                    <a href="#" class="cart-icon hidden-xs" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    <a href="#" class="cart-icon hidden-xs" onclick="showBasket()" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false">
 
                         <span class="badge bg-blue">0</span>
 
                         <i class="icofont icofont-cart-alt"></i>
                     </a>
-
-                    <a href="#" class="visible-xs" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    <a href="#" class="visible-xs" data-toggle="dropdown" onclick="showBasket()" role="button" aria-haspopup="true"
                        aria-expanded="false">
                         <i class="icofont icofont-cart-alt"></i>
                         Shopping cart
                     </a>
-
-                    <!-- Dropdown items list -->
                     <ul class="dropdown-menu">
-                        <!--todo sepete eklenenler gözüksün -->
+                        <div id="basketContent">
+
+                        </div>
                     </ul>
                 </li>
             </ul>
@@ -244,7 +242,7 @@
                                         </span>
 
                                     <!-- Icon card -->
-                                    <span class="icon-card">
+                                    <span onclick="addToBasket(${product.id})" class="icon-card">
                                             <i class="icofont icofont-cart-alt"></i>
                                         </span>
                                 </a>
@@ -274,6 +272,8 @@
 <script src="../../../../../resources/js/jquery.TDTimer.min.js"></script><!-- Timer -->
 <script src="../../../../../resources/js/selectize.min.js"></script><!-- Select customize -->
 <script src="../../../../../resources/js/main.min.js"></script>
+<script src="../../../../../resources/js/api/basket.js"></script>
+
 </body>
 
 </html>
