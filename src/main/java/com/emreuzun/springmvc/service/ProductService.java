@@ -19,4 +19,6 @@ public interface ProductService {
 
     void removeBasket(BasketRequest product);
 
+    void clearBasket();
+
 }

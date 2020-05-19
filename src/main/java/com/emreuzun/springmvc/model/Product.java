@@ -19,6 +19,8 @@ public class Product {
 
     private BigDecimal price = BigDecimal.ZERO;
 
+    private BigDecimal quantity = BigDecimal.ZERO;
+
     private int averageStar;
 
     public Long getId() {
@@ -75,6 +77,14 @@ public class Product {
 
     public void setPrice(BigDecimal price) {
         this.price = price;
+    }
+
+    public BigDecimal getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(BigDecimal quantity) {
+        this.quantity = quantity;
     }
 
     public int getAverageStar() {

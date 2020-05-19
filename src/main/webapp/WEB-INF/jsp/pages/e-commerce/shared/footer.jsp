@@ -1,0 +1,12 @@
+<script src="../../../../../resources/js/jquery.min.js"></script>
+<script src="../../../../../resources/js/bootstrap.min.js"></script>
+<script src="../../../../../resources/js/jquery-ui.min.js"></script>
+<script src="../../../../../resources/js/owl.carousel.min.js"></script><!-- OWL Carousel -->
+<script src="../../../../../resources/js/lv-ripple.jquery.min.js"></script><!-- BTN Material effects -->
+<script src="../../../../../resources/js/SmoothScroll.min.js"></script><!-- SmoothScroll -->
+<script src="../../../../../resources/js/jquery.TDPageEvents.min.js"></script><!-- Page Events -->
+<script src="../../../../../resources/js/jquery.TDParallax.min.js"></script><!-- Parallax -->
+<script src="../../../../../resources/js/jquery.TDTimer.min.js"></script><!-- Timer -->
+<script src="../../../../../resources/js/selectize.min.js"></script><!-- Select customize -->
+<script src="../../../../../resources/js/main.min.js"></script>
+<script src="../../../../../resources/js/api/basket.js"></script>

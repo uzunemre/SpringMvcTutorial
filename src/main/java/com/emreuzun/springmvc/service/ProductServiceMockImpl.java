@@ -7,6 +7,7 @@ import dto.response.ProductResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -40,7 +41,7 @@ public class ProductServiceMockImpl implements ProductService {
     @Override
     public List<ProductResponse> findBasketForApi() {
         List<ProductResponse> productResponseList = new ArrayList<>();
-        for (Product product : findBasket()){
+        for (Product product : findBasket()) {
             ProductResponse productResponse = new ProductResponse();
             productResponse.setId(product.getId());
             productResponse.setName(product.getName());
@@ -53,12 +54,20 @@ public class ProductServiceMockImpl implements ProductService {
     @Override
     public void addToBasket(BasketRequest request) {
         Product product = productRepository.findProduct(request.getProductId());
+        if (request.getQuantity() == null) {
+            product.setQuantity(new BigDecimal(1));
+        }
         basketMap.put(product.getId(), product);
     }
 
     @Override
     public void removeBasket(BasketRequest request) {
+        basketMap.remove(request.getProductId());
+    }
 
+    @Override
+    public void clearBasket() {
+        basketMap = new HashMap<>();
     }
 
 

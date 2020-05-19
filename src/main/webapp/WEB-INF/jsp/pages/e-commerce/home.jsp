@@ -5,32 +5,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!--link rel="icon" href="#"-->
-
-    <title>E-Commerce</title>
-
-    <link href="../../../../../resources/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../../../../resources/css/theme.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:500,800" rel="stylesheet">
-    <link href="../../../../../resources/fonts/icofont/icofont.min.css" rel="stylesheet">
-
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-
-</head>
+<%@include file="shared/header.jsp" %>
 
 <body>
 
-
 <nav class="navbar navbar-default">
-
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -55,27 +34,9 @@
                                 </span>
                                 <span class="info">
                                     <span class="name text-uppercase">Emre Uzun</span>
+                                    <a href="/basket">Order</a>
                                 </span>
                             </span>
-                </li>
-                <li class="cart">
-                    <a href="#" class="cart-icon hidden-xs" onclick="showBasket()" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">
-
-                        <span class="badge bg-blue">0</span>
-
-                        <i class="icofont icofont-cart-alt"></i>
-                    </a>
-                    <a href="#" class="visible-xs" data-toggle="dropdown" onclick="showBasket()" role="button" aria-haspopup="true"
-                       aria-expanded="false">
-                        <i class="icofont icofont-cart-alt"></i>
-                        Shopping cart
-                    </a>
-                    <ul class="dropdown-menu">
-                        <div id="basketContent">
-
-                        </div>
-                    </ul>
                 </li>
             </ul>
         </div>
@@ -135,7 +96,6 @@
         </div>
     </div>
 </div>
-
 <div class="container-fluid">
     <div class="row">
         <div class="clearfix">
@@ -153,8 +113,6 @@
     </div>
 </div>
 <div class="container block">
-
-
     <div class="row">
         <div class="col-xs-12">
             <div class="block-header text-uppercase">
@@ -162,7 +120,6 @@
             </div>
         </div>
     </div>
-
     <div class="row">
         <div class="col-xs-12">
             <div class="owl-carousel owl-default features nav-top-left">
@@ -261,18 +218,7 @@
 </div>
 
 
-<script src="../../../../../resources/js/jquery.min.js"></script>
-<script src="../../../../../resources/js/bootstrap.min.js"></script>
-<script src="../../../../../resources/js/jquery-ui.min.js"></script>
-<script src="../../../../../resources/js/owl.carousel.min.js"></script><!-- OWL Carousel -->
-<script src="../../../../../resources/js/lv-ripple.jquery.min.js"></script><!-- BTN Material effects -->
-<script src="../../../../../resources/js/SmoothScroll.min.js"></script><!-- SmoothScroll -->
-<script src="../../../../../resources/js/jquery.TDPageEvents.min.js"></script><!-- Page Events -->
-<script src="../../../../../resources/js/jquery.TDParallax.min.js"></script><!-- Parallax -->
-<script src="../../../../../resources/js/jquery.TDTimer.min.js"></script><!-- Timer -->
-<script src="../../../../../resources/js/selectize.min.js"></script><!-- Select customize -->
-<script src="../../../../../resources/js/main.min.js"></script>
-<script src="../../../../../resources/js/api/basket.js"></script>
+<%@include file="shared/footer.jsp" %>
 
 </body>
 

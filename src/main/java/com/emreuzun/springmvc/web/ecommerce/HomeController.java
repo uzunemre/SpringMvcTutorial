@@ -16,7 +16,7 @@ public class HomeController {
 
 
     @RequestMapping("/e-commerce")
-    public ModelAndView getUsers() {
+    public ModelAndView getHomePage() {
         ModelAndView mav = new ModelAndView();
         mav.setViewName("pages/e-commerce/home");
         mav.addObject("banners",productService.findBanners());
